@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>odin library</title>
+    <link
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>odin library</h1>
+      <section>
+        <form action="#" data-form>
+          <label for="title">title</label>
+          <input id="title" name="title" required type="text" />
+          <label for="author">author</label>
+          <input id="author" name="author" required type="text" />
+          <label for="n_pages">n pages</label>
+          <input
+            id="n_pages"
+            min="0"
+            name="n_pages"
+            required
+            step="1"
+            type="number"
+          />
+          <button data-submit type="submit">new book</button>
+        </form>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <td>title</td>
+              <td>author</td>
+              <td>n pages</td>
+              <td>have read</td>
+              <td>operations</td>
+            </tr>
+          </thead>
+          <tbody data-table></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="src/app.config.js" type="module"></script>
+    <script src="src/test.config.js" type="module"></script>
+  </body>
+</html>
